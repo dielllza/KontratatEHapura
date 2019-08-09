@@ -1,0 +1,198 @@
+table{
+	margin: 2%;
+	border-collapse: separate !important;
+	border: 2px solid #5fcf80 !important;
+	border-top-left-radius: 15px !important;
+	border-top-right-radius: 15px !important;
+}
+
+thead>tr{
+	color: #5fcf80 !important;
+	font-weight: bold;
+}
+
+th{
+	text-align: center;
+	padding-top: 0px;
+	padding-right: 1em;
+	border-bottom: 1px solid #5fcf80 !important;
+}
+
+td{
+	color: #717f86;
+}
+
+table>tbody{
+  text-align: center;
+}
+
+.read_document{
+	display: flex;
+	justify-content: center;
+}
+
+.eye {
+  margin: 0;
+  width: 13px;
+  height: 13px;
+  border: solid 1px #000;
+  border-radius:  75% 15%;
+  position: relative;
+  transform: rotate(45deg);
+  justify-content: center;
+}
+.eye:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border: solid 1px #000;
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+}
+.eye:before:hover{
+	background-color: 
+}
+
+.see_more{
+  margin: 7%;
+  border-radius: 10%; 
+  padding: 1px;
+  border:0;
+}
+
+/* Popup table part -----------------------------------------------------------------*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right !important;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+.sidenav {
+  width: 200px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.see_more_button{
+  background-color: #5fcf80;
+  color: white;
+  border-radius: 10%; 
+  padding: 1px;
+  border:0;
+}
+
+
+/*Pagination & Search-----------------------------------------------------------*/
+
+.search_bar{
+  width: 90%;
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+#seach_contract_name{
+  border-color: #5fcf80;
+  border-radius: 5%;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}

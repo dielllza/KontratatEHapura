@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontratat e Hapura</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/ikona.png"/>
+
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img id="logo" src="img/kontrata.png">
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Ballina</a></li>
+          <li><a href="#SetiITeDhenave">Seti i të dhënave</a></li>
+          <li><a href="dataset.html">Vizualizimet</a></li>
+           <li><a href="about-us.html">Rreth faqes</a></li>
+          <li><a href="http://biznesetehapura.com/sq" target="_blank">Bizneset e hapura</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Navigation bar-->
+  <!--Modal box-->
+  <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content no 1-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center form-title">Login</h4>
+        </div>
+        <div class="modal-body padtrbl">
+
+          <div class="login-box-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+            <div class="form-group">
+              <form name="" id="loginForm">
+                <div class="form-group has-feedback">
+                  <!----- username -------------->
+                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                  <!----- password -------------->
+                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="checkbox icheck">
+                      <label>
+                                <input type="checkbox" id="loginrem" > Remember Me
+                              </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--/ Modal box-->
+  <!--Banner-->
+  <div class="banner">
+    <div class="bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="banner-text text-center">
+            <div class="text-border">
+              <h2 class="text-dec">Kontratat e nënshkruara publike</h2>
+            </div>
+            <div class="intro-para text-center quote">
+              <p class="big-text">Komuna e Gjilanit</p>
+              <p class="small-text"> Komuna e Gjilanit me zhvillimin e platformës “Kontratat e hapura” është duke ju siguruar të gjithë qytetarëve të dhëna të hapura sa i përket kontratave që lidh ky institucion me të gjithë  operatorët ekonomik. Kjo platformë mundëson pasqyrimin e të gjitha kontratave nga drejtoritë komunale me qëllim që këto shënime të përdoren më tutje në funksion të transparencës së plotë në komunë.</p>
+             <!-- <a href="#footer" class="btn get-quote">GET A QUOTE</a> -->
+            </div>
+            <a href="#SetiITeDhenave" class="mouse-hover">
+              <div class="mouse"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Banner-->
+  <!--Cta-->
+  <section id="SetiITeDhenave" class="section-padding" style="background-color: #F7F7F7">
+    <h1 class="text-center " >Seti i të dhënave </h1>
+      <div class=" text-center " style="margin-top: 25px;" >
+      <form class="mc-trial row">
+        <div class="form-group col-md-3 col-md-offset-2 col-sm-3">
+          <div class=" controls">
+            <!--<input name="name" placeholder="Enter Your Name" class="form-control" type="text">-->
+            <select class="form-control">
+              <option value="Fusha">Fusha</option>
+              <option value="Viti">Viti</option>
+              <option value="Drejtoria">Drejtoria</option>
+              <option value="OE">OE</option>
+            </select>
+          </div>
+        </div>
+        <!-- End email input -->
+        <div class="form-group col-md-3 col-sm-3">
+          <div class=" controls">
+           <!-- <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">-->
+            <select class="form-control">
+              <option value="Lloji">Lloji</option>
+            </select>
+
+          </div>
+        </div>
+        <div class="form-group col-md-3 col-sm-3">
+          <div class=" controls">
+           <!-- <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">-->
+            
+          <select class="form-control">
+              <option value="Formati">Formati</option>
+              <option value="CSV">CSV</option>
+              <option value="Json">Json</option>
+          </select>
+
+          </div>
+        </div>
+      </form>
+</div> <br> 
+<div class="text-center Shkarko ">
+         <div class="btn-trial position"><a id = "seeAllButton" href="#">SHKARKO <i class="fa fa-download"></i></a></div>
+          </div> 
+        </div>
+      </div>
+    </div>
+</section>
+  <!--/ Cta-->
+  
+  <!--Courses-->
+  <section id="courses" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>KONTRATAT PUBLIKE</h2>
+          <p>Me te rejat.</p>
+          <hr class="bottom-line">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/contract01.jpg" class="img-responsive" style="width: 370px;height: 270px;">
+            <figcaption>
+              <h3>Kontrata 1</h3>
+              <p>Data e publikimit te njoftimit per kontrate <br>Data e nenshkrimit<br>Vlera totale e kontrates</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/contract02.jpg" class="img-responsive" style="width: 370px;height: 270px;">
+            <figcaption>
+              <h3>Kontrata 2</h3>
+              <p>Data e publikimit te njoftimit per kontrate <br>Data e nenshkrimit<br>Vlera totale e kontrates</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/contract03.jpg" class="img-responsive" style="width: 370px;height: 270px;">
+            <figcaption>
+              <h3>Kontrata 3</h3>
+              <p>Data e publikimit te njoftimit per kontrate <br>Data e nenshkrimit<br>Vlera totale e kontrates</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/contract04.jpg" class="img-responsive" style="width: 370px;height: 270px;">
+            <figcaption>
+              <h3>Kontrata 4</h3>
+              <p>Data e publikimit te njoftimit per kontrate <br>Data e nenshkrimit<br>Vlera totale e kontrates</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/contract05.jfif" class="img-responsive" style="width: 370px;height: 270px;">
+            <figcaption>
+              <h3>Kontrata 5</h3>
+              <p>Data e publikimit te njoftimit per kontrate <br>Data e nenshkrimit<br>Vlera totale e kontrates</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/contract06.jpg" class="img-responsive" style="width: 370px;height: 270px;">
+            <figcaption>
+              <h3>Kontrata 6</h3>
+              <p>Data e publikimit te njoftimit per kontrate <br>Data e nenshkrimit<br>Vlera totale e kontrates</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="text-center">
+         <div class="btn-trial position"><a id = "seeAllButton" href="#">Te Gjitha</a></div>
+        </div>
+    </div>
+  </section>
+  <!--/ Courses-->
+  <!-- Esma-->
+   <section id="work-shop" class="section-padding">
+    <div class="container" >
+      <div class="row"  >
+        <div class="header-section text-center" >
+          <h2>Gjilani Online</h2>
+          
+          <hr class="bottom-line">
+        </div>
+         <div class="row"  >
+        <div class="col-md-4 col-sm-6" >
+          <div class="service-box text-center">
+            <div class="icon-box">
+             <a href="https://kk.rks-gov.net/gjilan/prokurimi/planifikimi-i-prokurimit/" target="blank"> 
+              <i class="  fa fa-clock-o color-green"></i>  
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Planet e prokurorimit</h4></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+               <a href=" https://kk.rks-gov.net/gjilan/prokurimi/njoftim-per-kontrate/" target="blank">
+               <i class="fa fa-handshake-o color-green"></i> 
+            </div>
+            <div class="icon-text">
+             <h4 class="ser-text">Njoftim për kontratë</h4></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <a href="https://kk.rks-gov.net/gjilan/prokurimi/njoftim-per-anulim/" target="blank"> 
+                <i class=" fa fa-remove color-green"></i>  
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Njoftim për anulim</h4></a>
+            </div>
+          </div>
+        </div>
+</div>
+ <div class="row" >
+        <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+             <a href="https://kk.rks-gov.net/gjilan/prokurimi/njoftim-per-dhenien-e-kontrates/" target="blank">   
+              <i class="  fa fa-check color-green"></i>  
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Njoftim për dhënien e kontratës</h4></a>
+            </div>
+          </div>
+        </div>
+         
+         <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <a href="https://kk.rks-gov.net/gjilan/prokurimi/njoftim-per-informata-shtese/" target="blank"> 
+                <i class="fa fa-info-circle color-green"></i>  
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Njoftim për informata shtesë</h4></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <a href="https://kk.rks-gov.net/gjilan/prokurimi/anulim-i-dhenies-se-kontrates/" target="blank"> 
+                <i class="  fa fa-times-circle-o color-green"></i>  
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Njoftim për vazhdimin e afatit</h4></a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="row"  >
+         <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <a href="https://kk.rks-gov.net/gjilan/prokurimi/njoftimi-per-nenshkrim-te-kontrates/" target="blank"> 
+                <i class=" fa fa-pencil-square-o color-green"></i>  
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Njoftim për nënshkrimin e kontratës</h4></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <a href="https://kk.rks-gov.net/gjilan/prokurimi/njoftim-per-konkurs-projektimi/" target="blank">
+                <i class="fa fa-bell color-green"></i>  
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Njoftim për konkurs të projektimit</h4></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <a href="https://kk.rks-gov.net/gjilan/prokurimi/kab/" target="blank">
+               <i class="   fa fa-bar-chart color-green"></i>  
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Korniza afatmesme buxhetore</h4></a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="row"  >
+         <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center ">
+            <div class="icon-box">
+              <a href="https://kk.rks-gov.net/gjilan/prokurimi/kontratat-e-nenshkruara/" target="blank"> 
+                <i class=" fa fa-list-alt color-green"></i>  
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Kontratat e nënshkruara</h4></a>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <a href="https://kk.rks-gov.net/gjilan/prokurimi/njoftimi-indikativ/" target="blank"> 
+                <i class=" fa fa-bullhorn color-green"></i>  
+              </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Njoftim paraprak</h4></a>
+            </div>
+          </div>
+        </div>
+                 <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <a href=" https://kk.rks-gov.net/gjilan/prokurimi/njoftim-mbi-rezultatin-e-konkursit-te-projektimit/" target="blank"> 
+                <i class=" fa fa-check-square-o color-green"></i>  
+              </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Rezultatet e projektimit</h4></a>
+            </div>
+          </div>
+        </div>
+</div>
+      </div>
+    </div>
+  </section>
+  <!-- /Esma-->
+  <!--Contact-->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Na Kontaktoni</h2>
+          <p>Per cdo verejtje/sygjerim e pakenaqesi qe keni, mos hezitoni te na shkruani!</p>
+          <hr class="bottom-line">
+        </div>
+        <div id="sendmessage">Mesazhi juaj eshte derguar. Faleminderit!</div>
+        <div id="errormessage"></div>
+        <form action="" method="post" role="form" class="contactForm">
+          <div class="col-md-6 col-sm-6 col-xs-12 left">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control form" id="name" placeholder="Emri" data-rule="minlen:4" data-msg="Ju lutemi shkruani te pakten 4 karaktere" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email adresa" data-rule="email" data-msg="Ju lutem shkruani nje email adrese te vlefshme" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Tema" data-rule="minlen:4" data-msg="Ju lutemi shkruani te pakten 8 karaktere" />
+              <div class="validation"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 col-xs-12 right">
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Ju lutemi shkruani diqka per ne!" placeholder="Mesazhi i juaj"></textarea>
+              <div class="validation"></div>
+            </div>
+          </div>
+
+          <div class="col-xs-12">
+            <!-- Button -->
+            <button id="seeAllButton" type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light btn-trial">DERGO</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+  <!--/ Contact-->
+  <!--Footer-->
+  <footer id="footer" class="footer">
+  <div class="container text-center">
+    <div class="col-12 flex">
+      <div class="col-4" style="margin-left: 10%;">
+        <p>
+          Komuna e Gjilanit
+        </p>
+        <img src="img/gjilani-logo.png">
+      </div>
+
+      <div class="col-4">
+        <div>
+          <p>Adresa:</p>
+          <p>0280 320 781</p>
+          <p>Bulevardi i Pavarësisë p.n, Gjilan, Kosovë</p>
+        </div>
+        <ul class="social-links">
+          <p>
+          Na ndiqni në:
+          </p>
+          <li><a href="https://www.facebook.com/komunaegjilanit/"><i class="fa fa-facebook fa-fw"></i></a></li>
+        </ul>
+      <div>
+        Copyright © ODK 2019
+      </div>
+      </div>
+
+      <div class="col-4">
+        <p>
+          Dizajnuar dhe zhvilluar:
+        </p>
+        <img src="img/techstitution-logo.png" width="28%">
+      </div>
+    </div>
+  </div>
+  </div>
+  </footer>
+  <!--/ Footer-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
